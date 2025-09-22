@@ -2,43 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Coiny&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lavishly+Yours&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <div class="container">
+      <div class="user-input">
+        <h4>Bill</h4>
+         <input class="money-logo" placeholder="0" id="bill-input"></input>
+         <div class="select-tip">
+          <h4>Select Tip %</h4>
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <button>Custom</button>
+          </div>
+        <h4>Number of People</h4>
+        <input class="people-logo" placeholder="0" id="people-input"></input>
+      </div>
+      <div class="result-total">
+        <div class="tip-amount">
+          <h4>Tip Amount</h4>
+          <p>/ person</p>
+        </div>
+        <div class="total-person">
+          <h4>Total</h4>
+          <p>/ person</p>
+        </div>
+        <button class="reset">RESET</button>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
