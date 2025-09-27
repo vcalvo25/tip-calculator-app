@@ -28,7 +28,7 @@
             <button>15%</button>
             <button>25%</button>
             <button>50%</button>
-            <button>Custom</button>
+            <input id="custom-tip" placeholder="Custom" type="number" class="custom"></input>
           </div>
         <h4>Number of People</h4>
         <input class="people-logo" placeholder="0" id="people-input"></input>
@@ -37,10 +37,12 @@
         <div class="tip-amount">
           <h4>Tip Amount</h4>
           <p>/ person</p>
+          <p id="tipAmount" class="show-result"></p>
         </div>
         <div class="total-person">
           <h4>Total</h4>
           <p>/ person</p>
+          <p id="totalPerson" class="show-result"></p>
         </div>
         <button class="reset">RESET</button>
       </div>

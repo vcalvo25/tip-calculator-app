@@ -48,15 +48,30 @@ main {
 button {
     background-color: var(--green500);
     color: white;
-    border: none;
     padding: 5px;
     border-radius: 5px;
     max-width: 100%;
     width: 30%;
     font-family: "Space Mono", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.3em;
     margin: 8px auto;
+    border: 1px solid transparent;
+}
+
+.custom {
+    text-align: right;
+    background-color: var(--grey50);
+    color: var(--green500);
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 100%;
+    width: 30%;
+    font-family: "Space Mono", sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    margin: 8px auto;
+    border: 1px solid transparent;
 }
 
 .select-tip {
@@ -76,14 +91,20 @@ button {
     color: var(--grey500);
 }
 
-input {
+#bill-input, #people-input{
     background-color: var(--grey50);
     border: none;
     padding: 10px;
     border-radius: 5px;
     max-width: 100%;
     width: 95%;
+    font-family: "Space Mono", sans-serif;
+    font-size: 1.2rem;
+    text-align: right;
+    color: var(--green500);
+    font-weight: 700;
 }
+
 
 .money-logo {
     background-image: url('./images/icon-dollar.svg');
@@ -136,3 +157,12 @@ input {
     
 }
 
+.active {
+    background-color: var(--green400);
+    color: var(--green500);
+}
+
+.show-result {
+    font-size: 1rem;
+    color: var(--green500);
+}
